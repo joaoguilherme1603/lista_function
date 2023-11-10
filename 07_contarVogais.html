@@ -7,7 +7,17 @@
     */
 
     //Entrada
-
+    let vogais = prompt(`Insira uma palavra e direi a quantidade de vogais`).toLowerCase();
+    function quantidade(vogais){
+        let contagem = 0;
+        for(l of vogais){
+            if(l == "a" || l == "e" || l == "i" || l == "o" || l == "u"){
+                contagem ++
+            }
+        }
+        return(contagem);
+    }
+    document.write(`A vogais "${vogais}" contem ${quantidade(vogais)} vogais`);
 
     //Processamento
 

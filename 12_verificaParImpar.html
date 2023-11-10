@@ -5,6 +5,11 @@
     */
 
     //Entrada
+    let numero = Number(prompt(`Insira o numero e direi se é impar ou par`));
+    function verificador(numero){
+        if(numero%2 == 0){return("par")} else {return("impar")}
+    }
+    document.write(`Este numero é ${verificador(numero)}`)
 
 
     //Processamento
